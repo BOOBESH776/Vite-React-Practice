@@ -1,4 +1,5 @@
 import A from './counter';
+import './index.css';
 
 function App() {
     return (

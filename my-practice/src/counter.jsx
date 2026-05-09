@@ -17,7 +17,7 @@ function reset(){
 
 const A = () => {
     return (
-        <div ClassName='counter-container'>
+        <div className='counter-container' >
             <div>
                 <h1>Counter</h1>
             </div>

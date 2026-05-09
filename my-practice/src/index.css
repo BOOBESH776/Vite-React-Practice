@@ -1,21 +1,30 @@
-.counter-container{
-   background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  width: clamp(300px, 50vw, 400px);
+  background-color: #6bdfe1;
+}
+h1{
+  font-size: clamp(1rem, 10vw, 3rem);
+  font-weight: bold;
+  font-family:times new roman;
+  color: #fff;
+}
+.counter-value {
+  font-size: clamp(5rem , 20vw, 4rem);
+  font-weight: bold;
+  gap: 10px;
+  color: #fff;
 }
 
 
-.counter-value{
-    font-size: 24px;
-    font-weight: bold;
-    gap: 10px;
-}
-
-
-.counter-btn{
-    display: flex;
-    gap: 10px;
+.counter-btn {
+  display: flex;
+  gap: 10px;
 }
