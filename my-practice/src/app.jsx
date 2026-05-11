@@ -1,6 +1,6 @@
 // import A from './counter';
 // import './index.css';
-import React from 'react';
+// import React from 'react';
 import './components/style.css';
 import Header from './components/Header';
 import Footer from './components/Footer';

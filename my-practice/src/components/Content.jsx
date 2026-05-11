@@ -17,11 +17,18 @@ border-radius: 4px;
 let NewButton = styled(Button)`
 background-color: #008CBA;
 `;
+
+function print(){
+    alert('Clicked');
+}
+function con(){
+    console.log('Clicked');
+}
 const Content = ()=>{
     return(
         <>
-            <Button>Click Me</Button>
-            <NewButton>Click Me</NewButton>
+            <Button onClick={print}>Click Me</Button>
+            <NewButton onClick={con}>Click Me</NewButton>
         </>
     );
 }   
