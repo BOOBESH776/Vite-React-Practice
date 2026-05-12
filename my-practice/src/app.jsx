@@ -1,4 +1,4 @@
-// import A from './counter';
+import A from './counter';
 // import './index.css';
 // import React from 'react';
 import './components/style.css';
@@ -10,6 +10,7 @@ function App() {
     let user = 'CM';
     return (
         <>
+        <A />
         <Header user={user} />
         <Content />
         <Footer/>

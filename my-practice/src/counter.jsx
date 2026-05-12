@@ -1,28 +1,18 @@
-
-
-function plus(){
-    const counter = document.getElementById('counter');
-    counter.textContent = parseInt(counter.textContent) + 1;
-}
-
-function minus(){
-    const counter = document.getElementById('counter');
-    counter.textContent = parseInt(counter.textContent) - 1;
-}
-
-function reset(){
-    const counter = document.getElementById('counter');
-    counter.textContent = 0;
-}
+import { useState } from 'react';
 
 const A = () => {
+    const [state, setState] = useState(0);
+
+    const plus = () => setState((previousState) => { return previousState + 1;});
+    const minus = () => setState((previousState) => { return previousState - 1;});
+    const reset = () => setState(0);
     return (
         <div className='counter-container' >
             <div>
                 <h1>Counter</h1>
             </div>
 
-            <span id = "counter" className='counter-value'>0</span>
+            <span id = "counter" className='counter-value'>{state}</span>
 
             <div className='counter-btn'>
                 <button onClick={plus}>+</button>
