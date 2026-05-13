@@ -5,7 +5,7 @@ import './components/style.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Content from './components/Content';
-
+import Condition from './components/Condition';
 function App() {
     let user = 'CM';
     return (
@@ -14,6 +14,7 @@ function App() {
         <Header user={user} />
         <Content />
         <Footer/>
+        <Condition />
         </>
     );
 }
