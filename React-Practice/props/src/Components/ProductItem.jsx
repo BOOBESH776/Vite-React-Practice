@@ -1,13 +1,13 @@
 
 // import React from 'react';
 
-const ProductItem = (props) => {
+const ProductItem = ({name, price, description}) => {
 
     return (
     <div>  
-        <p>Name : {props.product.name}</p>
-        <p>Price : ${props.product.price}</p>
-        <p>Description : {props.product.description}</p>
+        <p>Name : {name}</p>
+        <p>Price : ${price}</p>
+        <p>Description : {description}</p>
     </div>
     );
 }
