@@ -10,7 +10,7 @@ const Content = () => {
     return (
     <div>  
         <h4>Product display using props</h4>
-        <ProductItem product = { product } />
+        <ProductItem name={product.name} price={product.price} description={product.description} />
     </div>
     );
 }
